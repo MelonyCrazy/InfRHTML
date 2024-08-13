@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уроки информатики - Изучаем HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6a0dad;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #8a2be2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .lesson {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .lesson h2 {
+            color: #6a0dad;
+        }
+        footer {
+            background-color: #6a0dad;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .support {
+            background-color: #e6e6fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .admin-panel {
+            background-color: #dcdcdc;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .admin-panel input[type="password"] {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .admin-panel input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #6a0dad;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .admin-panel input[type="submit"]:hover {
+            background-color: #8a2be2;
+        }
+        .registration-form {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .registration-form h2 {
+            color: #6a0dad;
+            margin-bottom: 20px;
+        }
+        .registration-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .registration-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #6a0dad;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .registration-form input[type="submit"]:hover {
+            background-color: #8a2be2;
+        }
+        .registration-form img {
+            max-width: 100%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Уроки информатики - Изучаем HTML</h1>
+    </header>
+    
+    <nav>
+        <a href="#lesson1">Урок 1: Введение в HTML</a>
+        <a href="#lesson2">Урок 2: Основные теги</a>
+        <a href="#lesson3">Урок 3: Списки и ссылки</a>
+        <a href="#lesson4">Урок 4: Работа с изображениями</a>
+        <a href="#lesson5">Урок 5: Таблицы</a>
+        <a href="#lesson6">Урок 6: Формы</a>
+        <a href="#lesson7">Урок 7: Мета-теги</a>
+        <a href="#lesson8">Урок 8: Встраивание видео</a>
+        <a href="#support">Техподдержка</a>
+        <a href="#admin">Админ-панель</a>
+        <a href="registration.html">Регистрация</a>
+    </nav>
+    
+    <div class="container">
+        <div id="lesson1" class="lesson">
+            <h2>Урок 1: Введение в HTML</h2>
+            <p>HTML (HyperText Markup Language) - это основной язык для создания веб-страниц. Он определяет структуру веб-страницы с помощью различных тегов.</p>
+            <p>Пример простейшего HTML-документа:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Пример страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        
+        <div id="lesson2" class="lesson">
+            <h2>Урок 2: Основные теги</h2>
+            <p>HTML использует теги для обозначения различных частей документа. Вот некоторые из основных тегов:</p>
+            <ul>
+                <li>&lt;h1&gt; - &lt;h6&gt;: Заголовки различных уровней</li>
+                <li>&lt;p&gt;: Абзац текста</li>
+                <li>&lt;a&gt;: Ссылка</li>
+                <li>&lt;img&gt;: Изображение</li>
+            </ul>
+        </div>
+        
+        <div id="lesson3" class="lesson">
+            <h2>Урок 3: Списки и ссылки</h2>
+            <p>В HTML можно создавать упорядоченные и неупорядоченные списки. Вот пример:</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Элемент списка 1&lt;/li&gt;
+    &lt;li&gt;Элемент списка 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <p>А вот пример ссылки:</p>
+            <pre><code>&lt;a href="https://example.com"&gt;Перейти на сайт&lt;/a&gt;</code></pre>
+        </div>
+        
+        <div id="lesson4" class="lesson">
+            <h2>Урок 4: Работа с изображениями</h2>
+            <p>Изображения добавляются с помощью тега &lt;img&gt;. Пример использования:</p>
+            <pre><code>&lt;img src="image.jpg" alt="Описание изображения"&gt;</code></pre>
+            <p>Атрибут <strong>alt</strong> описывает изображение и отображается, если изображение не удалось загрузить.</p>
+        </div>
+        
+        <div id="lesson5" class="lesson">
+            <h2>Урок 5: Таблицы</h2>
+            <p>Таблицы используются для отображения данных в виде строк и столбцов. Пример таблицы:</p>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Заголовок 1&lt;/th&gt;
+        &lt;th&gt;Заголовок 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Данные 1&lt;/td&gt;
+        &lt;td&gt;Данные 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+
+        <div id="lesson6" class="lesson">
+            <h2>Урок 6: Формы</h2>
+            <p>Формы используются для сбора данных от пользователей. Пример формы:</p>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Имя:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;input type="submit" value="Отправить"&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+
+        <div id="lesson7" class="lesson">
+            <h2>Урок 7: Мета-теги</h2>
+            <p>Мета-теги используются для предоставления информации о веб-странице. Пример мета-тега:</p>
+            <pre><code>&lt;meta name="description" content="Описание страницы"&gt;</code></pre>
+        </div>
+
+        <div id="lesson8" class="lesson">
+            <h2>Урок 8: Встраивание видео</h2>
+            <p>Видео можно встроить в страницу с помощью тега &lt;video&gt;. Пример:</p>
+            <pre><code>&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Ваш браузер не поддерживает видео.
+&lt;/video&gt;</code></pre>
+        </div>
+        
+        <div id="support" class="support">
+            <h2>Техническая поддержка</h2>
+            <p>Если у вас возникли вопросы или проблемы, вы можете обратиться в нашу техническую поддержку по email: support@example.com или позвонить по телефону: +7 (123) 456-78-90.</p>
+        </div>
+        
+        <div id="admin" class="admin-panel">
+            <h2>Админ-панель</h2>
+            <form action="admin.html" method="post">
+                <label for="password">Введите пароль:</label>
+                <input type="password" id="password" name="password">
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Уроки информатики. Все права защищены.</p>
+    </footer>
+</body>
+</html>
